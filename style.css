@@ -28,8 +28,7 @@ header {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
 
-section, div[id] {
-  /* Accounts for the 3rem total padding + text height + extra breathing room */
+div[id] {
   scroll-margin-top: 5.5rem; 
 }
 
@@ -134,6 +133,7 @@ header nav a:hover {
     padding: 4rem 10%;
     max-width: 1100px;
     margin: 0 auto;
+    scroll-margin-top: 5.5rem; 
 }
 
 .section h2 {
