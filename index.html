@@ -3,60 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Whit3Alpha | Developer Portfolio & Resume</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header / Navigation -->
     <header>
-        <div class="logo">Portfolio.</div>
+        <div class="logo">Whit3Alpha.</div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Header / Hero Section -->
     <section class="hero">
         <h1>Hi, I'm <span class="highlight">Whit3Alpha</span></h1>
-        <p>I build web projects and interactive experiences.</p>
-        <button id="cta-btn">Get In Touch</button>
+        <p class="subtitle">Software Developer & Web Creator</p>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> Negeri Sembilan, Malaysia</p>
+        <div class="hero-btns">
+            <button id="cta-btn"><i class="fas fa-envelope"></i> Contact Me</button>
+            <a href="https://github.com/Whit3Alpha" target="_blank" class="btn-outline"><i class="fab fa-github"></i> GitHub Profile</a>
+        </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Summary / About Section -->
     <section id="about" class="section">
         <h2>About Me</h2>
-        <p>Welcome to my portfolio! I'm passionate about coding, creating useful applications, and learning new technologies.</p>
+        <div class="card">
+            <p>Passionate developer focused on web technologies, Git version control, and building modern web applications. Currently leveraging browser-based cloud workflows like GitHub Codespaces and GitHub Pages to design and deploy lightweight, fast applications.</p>
+        </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>Frontend</h3>
+                <p>HTML5, CSS3, JavaScript (ES6+)</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <h3>Tools & Workflow</h3>
+                <p>Git, GitHub, GitHub Pages, VS Code / Codespaces</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Development</h3>
+                <p>Responsive Web Design, REST APIs, DOM Manipulation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
     <section id="projects" class="section">
-        <h2>My Projects</h2>
+        <h2>Featured Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>Project One</h3>
-                <p>A short description of your awesome project built using HTML, CSS, and JS.</p>
+                <div class="project-header">
+                    <h3>Personal Resume Portfolio</h3>
+                    <span class="badge">Web</span>
+                </div>
+                <p>A fast, responsive web resume and portfolio hosted directly on GitHub Pages using HTML5, CSS3, and JavaScript.</p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>GitHub Pages</span>
+                </div>
+                <a href="https://github.com/Whit3Alpha/portfolio" target="_blank" class="project-link">View Repository <i class="fas fa-external-link-alt"></i></a>
             </div>
+
             <div class="project-card">
-                <h3>Project Two</h3>
-                <p>Another amazing project showcasing your coding skills and creative ideas.</p>
+                <div class="project-header">
+                    <h3>Interactive Web App</h3>
+                    <span class="badge">In Progress</span>
+                </div>
+                <p>An upcoming project showcasing modern UI components and API integrations.</p>
+                <div class="tags">
+                    <span>JavaScript</span>
+                    <span>CSS Grid</span>
+                    <span>APIs</span>
+                </div>
+                <a href="#" class="project-link">Coming Soon...</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to collaborate or just say hello!</p>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <h2>Get In Touch</h2>
+        <div class="card contact-card">
+            <p>I'm open to collaborations, open-source projects, and new opportunities!</p>
+            <div class="contact-links">
+                <a href="https://github.com/Whit3Alpha" target="_blank"><i class="fab fa-github"></i> github.com/Whit3Alpha</a>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Whit3Alpha. Built with GitHub Pages.</p>
+        <p>&copy; 2026 Whit3Alpha. Hosted on GitHub Pages.</p>
     </footer>
 
     <script src="script.js"></script>
