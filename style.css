@@ -1,41 +1,191 @@
-/* Contact Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* Header & Nav */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background: #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header nav a {
+    color: #f8fafc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero .highlight {
+    color: #38bdf8;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+}
+
+.hero .location {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero button, .btn-outline {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.hero button {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+}
+
+.hero button:hover {
+    background-color: #7dd3fc;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #38bdf8;
+    border: 2px solid #38bdf8;
+}
+
+.btn-outline:hover {
+    background: rgba(56, 189, 248, 0.1);
+    transform: translateY(-2px);
+}
+
+/* General Sections */
+.section {
+    padding: 4rem 10%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #38bdf8;
+    border-bottom: 2px solid #1e293b;
+    padding-bottom: 0.5rem;
+}
+
+.card {
+    background-color: #1e293b;
+    padding: 1.8rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+}
+
+/* Contact Section & Buttons */
 .contact-card {
     text-align: center;
 }
 
 .contact-links {
-    margin-top: 2rem; /* Add space above the buttons */
+    margin-top: 1.5rem;
     display: flex;
-    flex-direction: column; /* Stack the buttons vertically */
-    align-items: center; /* Center them */
-    gap: 1rem; /* Space between the buttons */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
-.contact-links a {
-    padding: 0.75rem 1.5rem; /* Make it look like a button */
-    font-size: 1.1rem;
-    border-radius: 6px; /* Rounded corners */
-    font-weight: 600;
-    text-decoration: none; /* Remove underline */
+/* High Visibility Contact Buttons */
+.btn-contact {
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem; /* Space between icon and text */
-    transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
-    
-    /* Default State: Light outline, cyan text */
-    background-color: transparent;
-    color: #38bdf8;
-    border: 2px solid rgba(56, 189, 248, 0.4);
-    
-    /* Ensure the button takes proper width on mobile */
-    min-width: 250px;
     justify-content: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0f172a;
+    background-color: #38bdf8;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
 }
 
-/* Hover State: Fill the button with Cyan */
-.contact-links a:hover {
-    background-color: #38bdf8;
-    color: #0f172a;
-    border-color: #38bdf8;
-    transform: translateY(-2px); /* Lift on hover */
+.btn-contact:hover {
+    background-color: #7dd3fc;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px -2px rgba(56, 189, 248, 0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #020617;
+    color: #64748b;
+    margin-top: 3rem;
 }
