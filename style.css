@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 10%;
+    padding: 1.2rem 8%;
     background: #1e293b;
     position: sticky;
     top: 0;
@@ -25,7 +25,7 @@ header {
 }
 
 header .logo {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #38bdf8;
 }
@@ -33,13 +33,14 @@ header .logo {
 header nav ul {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 header nav a {
     color: #f8fafc;
     text-decoration: none;
     font-weight: 500;
+    font-size: 0.95rem;
     transition: color 0.3s;
 }
 
@@ -49,18 +50,17 @@ header nav a:hover {
 
 /* Hero Section */
 .hero {
-    height: 70vh;
+    padding: 5rem 1rem 4rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 1rem;
     background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
 }
 
 .hero h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
 }
 
@@ -69,13 +69,14 @@ header nav a:hover {
 }
 
 .hero .subtitle {
-    font-size: 1.3rem;
-    color: #94a3b8;
+    font-size: 1.4rem;
+    color: #38bdf8;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .hero .location {
-    color: #64748b;
+    color: #94a3b8;
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
 }
@@ -85,9 +86,9 @@ header nav a:hover {
     gap: 1rem;
 }
 
-.hero button, .btn-outline {
+.btn-primary, .btn-outline {
     padding: 0.75rem 1.5rem;
-    font-size: 1rem;
+    font-size: 0.95rem;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
@@ -98,13 +99,13 @@ header nav a:hover {
     transition: transform 0.2s, background-color 0.2s;
 }
 
-.hero button {
+.btn-primary {
     background-color: #38bdf8;
     color: #0f172a;
     border: none;
 }
 
-.hero button:hover {
+.btn-primary:hover {
     background-color: #7dd3fc;
     transform: translateY(-2px);
 }
@@ -120,15 +121,15 @@ header nav a:hover {
     transform: translateY(-2px);
 }
 
-/* General Sections */
+/* Sections */
 .section {
-    padding: 4rem 10%;
+    padding: 3.5rem 8%;
     max-width: 1100px;
     margin: 0 auto;
 }
 
 .section h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
     color: #38bdf8;
     border-bottom: 2px solid #1e293b;
@@ -142,10 +143,48 @@ header nav a:hover {
     border: 1px solid #334155;
 }
 
-/* Skills Section */
+/* Timeline / Experience */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.timeline-item .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.timeline-item .company {
+    color: #38bdf8;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.timeline-item .date {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    background: #0f172a;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+}
+
+.timeline-item ul {
+    margin-left: 1.2rem;
+    color: #cbd5e1;
+}
+
+.timeline-item li {
+    margin-bottom: 0.4rem;
+}
+
+/* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
 }
 
@@ -158,9 +197,9 @@ header nav a:hover {
 }
 
 .skill-card i {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #38bdf8;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .skill-card h3 {
@@ -169,19 +208,19 @@ header nav a:hover {
 
 .skill-card p {
     color: #94a3b8;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
-/* Projects Section */
+/* Projects Grid */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
 }
 
 .project-card {
     background-color: #1e293b;
-    padding: 1.8rem;
+    padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid #334155;
     display: flex;
@@ -190,63 +229,53 @@ header nav a:hover {
 }
 
 .project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 0.75rem;
 }
 
 .badge {
+    display: inline-block;
+    margin-top: 0.4rem;
     background-color: #0284c7;
     color: #fff;
     font-size: 0.75rem;
-    padding: 0.25rem 0.6rem;
-    border-radius: 12px;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
     font-weight: 600;
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 1rem 0;
+    gap: 0.4rem;
+    margin-top: 1rem;
 }
 
 .tags span {
     background-color: #0f172a;
     color: #38bdf8;
-    padding: 0.25rem 0.5rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 4px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
-.project-link {
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.project-link:hover {
-    text-decoration: underline;
-}
-
-/* Contact Section */
+/* Contact */
 .contact-card {
     text-align: center;
 }
 
-.contact-links {
-    margin-top: 1rem;
+.contact-details {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 }
 
-.contact-links a {
+.contact-details a {
     color: #38bdf8;
     text-decoration: none;
-    font-size: 1.1rem;
 }
 
-.contact-links a:hover {
+.contact-details a:hover {
     text-decoration: underline;
 }
 
